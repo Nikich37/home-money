@@ -24,4 +24,8 @@ export class BillService extends BaseApi{
         return data;
       }));
   }
+
+  updateBill(bill: Bill): Observable<Bill>{
+    return this.put('bill', bill);
+  }
 }

@@ -11,7 +11,7 @@
 </div>
 <section class="section">
   <div class="row text-center" *ngIf="!isLoaded1 && !isLoaded2">
-    Loading...
+    <wfm-loader></wfm-loader>
   </div>
   <div class="row" *ngIf="isLoaded1 && isLoaded2">
     <wfm-bill-card [bill]="bill" [currency]="currency"></wfm-bill-card>

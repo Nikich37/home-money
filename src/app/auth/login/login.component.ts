@@ -27,6 +27,9 @@ export class LoginComponent implements OnInit {
       if (params['nowCanLogin']){
         this.showMessage('Теперь вы можете зайти в систему', 'success');
       }
+      else if(params['accessDenied']){
+        this.showMessage('Для работы с системой нужно авторизироваться');
+      }
     })
 
     this.form = new FormGroup({
